@@ -81,9 +81,7 @@ zaf_df = parse_XML('sudafrica.xml', df_cols)
 
 
 #ACCES GOOGLE SHEET
-gc = gspread.service_account(filename='taller-tarea4-316614-f61660a0a11d.json')
-sh = gc.open_by_key('1hqA3IsiCwZ-TrqApLZTMXwx5gKbpoC4HCPeoeI6h_XA')
-worksheet = sh.get_worksheet(0)
+#Censurado
 
 #APPEND DATA TO SHEET
 df_data = pd.concat([aus_df, can_df, che_df, deu_df, tha_df, zaf_df])
