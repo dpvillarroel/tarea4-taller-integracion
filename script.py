@@ -89,6 +89,3 @@ worksheet = sh.get_worksheet(0)
 df_data = pd.concat([aus_df, can_df, che_df, deu_df, tha_df, zaf_df])
 set_with_dataframe(worksheet,df_data)
 
-
-"""str(numeric)
-                numeric = re.sub('[.]',',',numeric)"""
